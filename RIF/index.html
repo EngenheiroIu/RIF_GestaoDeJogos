@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Acesso</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="im/x-icon">  
+<style>
+    body{
+        background-color: lightgray;
+        
+    }
+   section{
+    
+    color: rgb(3, 3, 3);
+    text-align: center;
+    border: 4px;
+    border-radius: 2px;
+    border-color: aqua;
+
+   }
+
+</style>
+
+</head>
+
+<body>
+    <img src="img/Logo RIF Sem cor de fundo.png" style="margin-left: 26%;">
+    <section >
+      <label form="usuario" align="center" style="font-size: 22px;"><strong> Usuário </strong></label>
+      <input type="text" name="usuario" id="idusuario" align="center">
+      <br>
+      <label form="senha" style="font-size: 22px;"> <strong> Acessar  </strong></label>
+      <input type="password" name="senha" id="idsenha">
+      <br>
+      <br>
+      <input type="submit"  value= "Acessar" onclick="Acessar()" style=" font-size: 27px;">
+    </section>
+
+    <script>
+    function Acessar(){
+    
+        var usuario = document.getElementById("idusuario")
+        var senha = document.getElementById("idsenha")
+        var S = senha.value
+        var Z = "Zawardu"
+        
+        if (S === Z ) {
+            window.location.href = "file:///C:/Users/Lenovo/OneDrive/Imagens/Documentos/Curso%20em%20V%C3%ADdeo%20-%20JS/RIF/cadastrarusuario/index.html";
+        }
+        else{
+            window.alert("Senha Incorreta")
+        }
+        }
+
+
+
+
+    </script>
+</body>
+</html>
