@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+  input{
+ font-size: 14px;
+ padding : 7px;
+ margin-top: 5px;
+text-align: center;
+
+}
+
+button{
+
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    background-color: aqua;
+    margin-top: 0px;
+    background-size: auto;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgb(84, 139, 165);
+}
+
+
+body{
+
+margin: 0;
+font-size: 30px;
+
+}
+
+
+
+
+</style>
+<body>
+    
+     <form   method="POST" action="enviar.php">
+       
+            <h1 style="font-size:small;">Cadastrar Jogo</h1>
+
+
+         <label for="data">Data</label> </label>
+         <input type="date" id="data" size="30" name="data" maxlength="100"><br>
+         <label for="times">Times</label>
+         <input type="text" id="times" size="30" name="times" maxlength="100"><br>
+         <label for="divisao">Divisão</label>
+         <input type="text" id="divisao" size="30" name="divisao" maxlength="100"><br>
+         <label for="gol"> Após o GOL?</label>
+         <input type="text" placeholder="Após o GOL?" list="gol" name="gol">
+         <datalist id="gol">
+         <option value="Sim">Sim</option>
+         <option value="Não">Não</option>
+         </datalist>
+         </input>
+         <br> <br> 
+
+         <h2> Partida </h2>
+         
+         <label for="hentrada">Horario Entrada</label> </label>
+         <input type="number" id="hentrada" size="30" name="hentrada" maxlength="100">
+        <input type="text" placeholder="Método" list="metodo" name="metodo">
+        <datalist id="metodo">
+        <option value=""></option>
+        <option value=" Under Limit 1,5">Under Limit 1,5</option>
+        <option value=" Under Limit 2,5">Under Limit 2,5</option>
+        <option value=" Under Limit 3,5">Under Limit 3,5</option>
+        <option value=" Under Limit 4,5">Under Limit 4,5</option>
+    </datalist>
+        </input>
+        <br>
+         <label for="oldentrada">Old Entrada</label>
+         <input type="number" id="oldentrada" size="30" name="oldentrada" maxlength="100"><br>
+         <label for="hsaida">Horario Saída</label> </label>
+         <input type="number" id="hsaida" size="30" name="hsaida" maxlength="100">
+         <label for="oldsaida">Old Saída</label>
+         <input type="number" id="oldsaida" size="30" name="oldsaida" maxlength="100"><br>
+         <label for="texposicao">Tempo de Exposição</label> </label>
+         <input type="number" id="texposicao" size="30" name="texposicao" maxlength="100">
+         <label for="lucro">Lucro</label>
+         <input type="number" id="lucro" size="30" name="lucro" maxlength="100"><br><br><br>
+
+     <button type="submit"  name="cadastrar" id="cadastrar">Cadastrar</button>
+    </form>
+ </body>
+</html>
